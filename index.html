@@ -5,11 +5,13 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="gqvcxoOR"></script>
   <header>
     
 
 <div id="menu" style="list-style-type:none;">
-<li><img src=rondaLogo.png width=60 height=60 alt="logo" /></li>
+<li><a href="#intro"><img src=rondaLogo.png width=70 height=70 alt="logo" /></a></li>
 <li class="menuitem"><a href="#about">About Me</a></li>
 <li class="menuitem"><a href="#photos">My Photos</a></li>
 <li class="menuitem"><a href="#playlist">My Playlist</a></li>
@@ -19,7 +21,22 @@
 <li class="menuitem"><a href="#contact">Contact Me</a></li>
 </div>
 </header>
-		  
+<section id="intro" class="section">	
+  <br/>
+  <br/>
+  <br/>
+  <h3><b>
+    Hi, I am Ronda!
+  </b>
+  </h3>
+  <div class="intropictures">
+  <img src="intro1.jpeg" alt="intro 1">
+  <img src="intro2.jpeg" alt="intro 2">
+  <img src="intro3.jpeg" alt="intro 3">
+  </div>
+
+</section>
+  
 <section id="about" class="section">
 
 
@@ -29,17 +46,18 @@
 <h1>
   About Me
 </h1>
-<p> Hi there! I am Ronda, a two-year-old Labrador Retriever who started training to become a guide dog
-  for the blind when I was little. I am very friendly and energetic puppy, always eager to learn new things
+<h2>
+  Hi there! I am Ronda, a two-year-old Labrador Retriever who started training to become a guide dog
+  for the blind when I was little.
+</h2>
+<p>  I am very friendly and energetic puppy, always eager to learn new things
   and meet new people and receiving new toys. With my intelligence, loyalty, and gentle nature (and cuteness 
   of course),I have all the traits necessary to become a fantastic guide dog. This is why when I was one-year-old
   I passed all the tests to become a guide dog. Actually, I did so well that they decided they want to keep my
   genes, so my puppies will be guide dogs as well and provide invaluable assistance to those with visual
   impairments. So now, I am a mother of 9 little puppies who are undergoing their training.
    </p>
-<br/>
-<br/>
-<br/>
+
 </section>
 
 <section id="photos" class="section">
@@ -50,41 +68,63 @@
 <h1>
   My Photos
 </h1>
+<h2> 
+  This is me in the pictures! growing up and doing all of my favorite things.
+</h2>
 <div class="gallery">
-  <img src="ronda1.jpeg" alt="Image 1">
-  <img src="ronda2.jpeg" alt="Image 2">
-  <img src="ronda3.jpeg" alt="Image 3">
-  <img src="ronda4.jpeg" alt="Image 4">
-  <img src="ronda5.jpeg" alt="Image 5">
-  <img src="ronda6.jpeg" alt="Image 6">
-  <img src="ronda7.jpeg" alt="Image 7">
-  <img src="ronda8.jpeg" alt="Image 8">
-  <img src="ronda9.jpeg" alt="Image 9">
-  <img src="ronda10.jpeg" alt="Image 10">
-  <img src="ronda11.jpeg" alt="Image 11">
+  <img src="ronda1.jpeg" alt="ronda 1">
+  <img src="ronda2.jpeg" alt="ronda 2">
+  <img src="ronda3.jpeg" alt="ronda 3">
+  <img src="ronda4.jpeg" alt="ronda 4">
+  <img src="ronda5.jpeg" alt="ronda 5">
+  <img src="ronda6.jpeg" alt="ronda 6">
+  <img src="ronda7.jpeg" alt="ronda 7">
+  <img src="ronda8.jpeg" alt="ronda 8">
+  <img src="ronda9.jpeg" alt="ronda 9">
+  <img src="ronda10.jpeg" alt="ronda 10">
+  <img src="ronda11.jpeg" alt="ronda 11">
+</div>
+<h2> 
+  And here you can see my puppies
+</h2>
+<div class="gallery">
+  <img src="ronda12.jpeg" alt="ronda 12">
+  <img src="ronda13.jpeg" alt="ronda 13">
+  <img src="ronda14.jpeg" alt="ronda 14">
+  <img src="ronda15.jpeg" alt="ronda 15">
+  <img src="ronda16.jpeg" alt="ronda 16">
+  <img src="ronda17.jpeg" alt="ronda 17">
 </div>
 </section>
 
 <section id="playlist" class="section">
-
 <br/>
 <br/>
 <br/>
 <h1>
   My Playlist
 </h1>
+<h2>
+  I love watching soccer with my human!
+</h2>
 <br/>
-<br/>
-<br/>
-</section>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sSk9hrwpkZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></section>
 
 <section id="like" class="section">
 <br/>
 <br/>
 <br/>
+
 <h1>
   Give Me A Like
 </h1>
+<h2>
+  If you like Ronda, Give here a LIKE!
+</h2>
+<br/>
+
+<div class="fb-like" data-href="https://web-development-environments-2023.github.io/312235765/" data-width="500px" data-layout="" data-action="" data-size="large" data-share="false"></div>
 <br/>
 <br/>
 <br/>
@@ -97,15 +137,11 @@
 <h1>
   Scan My Code
 </h1>
-<br/>
-<br/>
-<br/>
+<img src="QRcode.png" alt="QRcode">
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
+
 <h1>
   ANS
 </h1>
@@ -115,10 +151,9 @@
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
 <a><h1> Contact Me </h1></a>
+<br/>
+
 <form action="mailto:bliman@post.bgu.ac.il" method="post" enctype="text/plain">
 
 
