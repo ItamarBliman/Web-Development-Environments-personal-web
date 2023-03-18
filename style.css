@@ -77,11 +77,11 @@ h3{
 	letter-spacing: 1px;
 	text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
 
-	-webkit-background-clip: text;
+	/* -webkit-background-clip: text; */
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 50px;
 	animation: neon 1.5s ease-in-out infinite alternate;
-	  -webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-width: 2px;
   	-webkit-text-stroke-color: #0992b0;
 }
 @keyframes neon {
