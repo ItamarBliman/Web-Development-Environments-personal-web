@@ -23,8 +23,6 @@
 </header>
 <section id="intro" class="section">	
   <br/>
-  <br/>
-  <br/>
   <h3><b>
     Hi, I am Ronda!
   </b>
@@ -40,8 +38,6 @@
 <section id="about" class="section">
 
 
-<br/>
-<br/>
 <br/>
 <h1>
   About Me
@@ -62,8 +58,6 @@
 
 <section id="photos" class="section">
 
-<br/>
-<br/>
 <br/>
 <h1>
   My Photos
@@ -99,8 +93,6 @@
 
 <section id="playlist" class="section">
 <br/>
-<br/>
-<br/>
 <h1>
   My Playlist
 </h1>
@@ -113,8 +105,6 @@
 
 <section id="like" class="section">
 <br/>
-<br/>
-<br/>
 
 <h1>
   Give Me A Like
@@ -125,14 +115,9 @@
 <br/>
 
 <div class="fb-like" data-href="https://web-development-environments-2023.github.io/312235765/" data-width="500px" data-layout="" data-action="" data-size="large" data-share="false"></div>
-<br/>
-<br/>
-<br/>
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
 <br/>
 <h1>
   Scan My Code
@@ -141,33 +126,42 @@
 </section>
 
 <section id="spa" class="section">
-
+<br>
 <h1>
   ANS
 </h1>
 <br/>
-<br/>
-<br/>
+
 </section>
 
 <section id="contact" class="section">
+  <br/>
+
 <a><h1> Contact Me </h1></a>
-<br/>
 
 <form action="mailto:bliman@post.bgu.ac.il" method="post" enctype="text/plain">
 
 
   <label for="email">Email:</label>
   <input type="email" id="email" name="email" required>
+  <br>
 
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-
+  <label for="message">Message: </label>
+  <textarea id="message" name="message" required style="vertical-align: middle;"></textarea>
   <input type="submit" value="Send">
+
+
+  <br>
+  <label> click to add emojis:</label>
+  <button class="emoji">😀</button>
+  <button class="emoji">🐕</button>
+  <button class="emoji">😎</button>
+  <button class="emoji">🦮</button>
+  <button class="emoji">⭐</button>
+  <button class="emoji">😍</button>
+
 </form>
-<br/>
-<br/>
-<br/>
+<br>
 </section>
 
 
@@ -184,6 +178,17 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+ <script>
+  const emojiButtonss = document.querySelectorAll('.emoji');
+  const myTextarea = document.getElementById('message');
+
+  emojiButtonss.forEach(button => {
+      button.addEventListener('click', () => {
+   const emoji = button.innerHTML;
+myTextarea.value += emoji;
+});
+});
+</script>
  	<footer>
 		<p>&copy; 2023 Itamar Bliman</p>
 	</footer>
