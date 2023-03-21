@@ -171,12 +171,12 @@
 
   <br>
   <label> click to add emojis:</label>
-  <button class="emoji">😀</button>
-  <button class="emoji">🐕</button>
-  <button class="emoji">😎</button>
-  <button class="emoji">🦮</button>
-  <button class="emoji">⭐</button>
-  <button class="emoji">😍</button>
+  <button id="1emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">😀</button>
+  <button id="2emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">🐕</button>
+  <button id="3emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">😎</button>
+  <button id="4emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">🦮</button>
+  <button id="5emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">⭐</button>
+  <button id="6emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">😍</button>
 
 </form>
 <br>
@@ -197,16 +197,14 @@ $(function(){
  });​
  </script>
  <script>
-  const emojiButtonss = document.querySelectorAll('.emoji');
+  function addemoji(event, emoji){
+    event.preventDefault();
   const myTextarea = document.getElementById('message');
+        myTextarea.value += emoji;
 
-  emojiButtonss.forEach(button => {
-      button.addEventListener('click', () => {
-   const emoji = button.innerHTML;
-myTextarea.value += emoji;
-});
-});
+}
 </script>
+
  	<footer>
 		<p>&copy; 2023 Itamar Bliman</p>
 	</footer>
