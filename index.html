@@ -171,12 +171,12 @@
 
   <br>
   <label> click to add emojis:</label>
-  <button id="1emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">😀</button>
-  <button id="2emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">🐕</button>
-  <button id="3emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">😎</button>
-  <button id="4emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">🦮</button>
-  <button id="5emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">⭐</button>
-  <button id="6emoji" class="emoji" onclick="addemoji(event, this.innerHTML)">😍</button>
+  <button class="emoji" onclick="addemoji(event, this.innerHTML)">😀</button>
+  <button class="emoji" onclick="addemoji(event, this.innerHTML)">🐕</button>
+  <button class="emoji" onclick="addemoji(event, this.innerHTML)">😎</button>
+  <button class="emoji" onclick="addemoji(event, this.innerHTML)">🦮</button>
+  <button class="emoji" onclick="addemoji(event, this.innerHTML)">⭐</button>
+  <button class="emoji" onclick="addemoji(event, this.innerHTML)">😍</button>
 
 </form>
 <br>
@@ -201,7 +201,6 @@ $(function(){
     event.preventDefault();
   const myTextarea = document.getElementById('message');
         myTextarea.value += emoji;
-
 }
 </script>
 
