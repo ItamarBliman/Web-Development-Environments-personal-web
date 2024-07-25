@@ -3,7 +3,7 @@
 This is a repository for assignment 1 of the Web development environments course at the [Ben-Gurion University](https://in.bgu.ac.il/), Israel.
 
 ## The Author
-Itamar Bliman - ID 312235765
+Itamar Bliman
 
 
 ## Assignment Description
